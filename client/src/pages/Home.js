@@ -1,5 +1,6 @@
 import React from "react"
-import { Button, Card, Image, Segment } from "semantic-ui-react"
+import { Link } from "react-router-dom"
+import { Button, Card, Segment } from "semantic-ui-react"
 
 const Home = () => (
     <Segment padded='very' size='large'>
@@ -16,7 +17,9 @@ const Home = () => (
                         <Button.Group>
                             <Button secondary>Sign up</Button>
                             <Button.Or />
-                            <Button primary>Login </Button>
+                            <Button as={Link} to='/manufacture' primary>
+                                Login{" "}
+                            </Button>
                         </Button.Group>
                     </div>
                 </Card.Content>
@@ -33,7 +36,7 @@ const Home = () => (
                         <Button.Group>
                             <Button secondary>Sign up</Button>
                             <Button.Or />
-                            <Button primary>Login </Button>
+                            <Button as = {Link} to = "/distributor" primary>Login </Button>
                         </Button.Group>
                     </div>
                 </Card.Content>
@@ -52,7 +55,7 @@ const Home = () => (
                         <Button.Group>
                             <Button secondary>Sign up</Button>
                             <Button.Or />
-                            <Button primary>Login </Button>
+                            <Button as = {Link} to = "/retailer" primary>Login </Button>
                         </Button.Group>
                     </div>
                 </Card.Content>
@@ -70,7 +73,7 @@ const Home = () => (
                         <Button.Group>
                             <Button secondary>Sign up</Button>
                             <Button.Or />
-                            <Button primary>Login </Button>
+                            <Button as = {Link} to = "/consumer" primary>Login </Button>
                         </Button.Group>
                     </div>
                 </Card.Content>

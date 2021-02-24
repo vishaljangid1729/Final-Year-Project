@@ -10,7 +10,7 @@ const web3 = new Web3(Web3.givenProvider);
 const contactAddr = '0xd22809eBBE96f81f323dD433b33dA5284a3413e5';
 const SimpleContract = new web3.eth.Contract (simpleStorageAbi, contactAddr);
 
-function App() {
+function Blockchain() {
   const [number, setNumber] = useState(0);
   const [getNumber, setGetNumber] = useState('0x00');
 
@@ -58,4 +58,4 @@ function App() {
   );
 }
 
-export default App;
+export default Blockchain;
